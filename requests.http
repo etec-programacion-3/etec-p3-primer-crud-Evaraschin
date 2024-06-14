@@ -1,0 +1,29 @@
+GET http://localhost:3000/book HTTP/1.1
+
+###
+GET http://localhost:3000/book/1 HTTP/1.1
+
+###
+POST http://localhost:3000/book HTTP/1.1
+Content-Type: application/json
+
+{
+  "autor": "Emilio",
+  "isbn": 123312,
+  "editorial": "aaaaa",
+  "paginas": 123123
+}
+
+###
+PUT http://localhost:3000/book/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "autor": "Emilio",
+  "isbn": "123312",
+  "editorial": "aaaaa",
+  "paginas": "12321"
+}
+
+###
+DELETE http://localhost:3000/book/1 HTTP/1.1
